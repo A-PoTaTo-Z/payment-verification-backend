@@ -65,10 +65,7 @@ public class RecaptchaService {
     }
 
     public boolean verify(String token) {
-        /*
-         * This switch is useful for automated tests.
-         * Keep it enabled in normal development and production.
-         */
+       
         if (!enabled) {
             LOGGER.warn(
                     "reCAPTCHA verification is disabled."
