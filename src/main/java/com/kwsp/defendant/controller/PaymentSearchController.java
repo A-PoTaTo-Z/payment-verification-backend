@@ -11,7 +11,6 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +20,6 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/public-payments")
-@CrossOrigin(origins = "${app.frontend.url}")
 public class PaymentSearchController {
 
     private static final String GENERIC_ERROR =
