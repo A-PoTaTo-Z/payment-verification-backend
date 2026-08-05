@@ -1,0 +1,10 @@
+target/
+data/
+logs/
+.vscode/
+.idea/
+.git/
+*.log
+*.mv.db
+*.trace.db
+.env
